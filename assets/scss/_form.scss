@@ -1,0 +1,14 @@
+.formInput {
+    background-color: $gris;
+    color: $beige;
+    border: 1px solid $bordo;
+}
+
+.formTextarea {
+    @extend .formInput;
+    height: 150px;
+}
+
+.formBtn {
+    @include btn ($beige,$bordo,2px solid $beige);
+}

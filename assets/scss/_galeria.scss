@@ -1,0 +1,50 @@
+.mImg {
+    transition: all 0.5s;
+}
+
+.mImg:hover {
+    transform: scale(1.1);
+}
+
+.ampliacion {
+    display: none;
+}
+
+.ampliacion:target {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.tituloGaleria {
+    h3 {
+        color: $beigeTrasparencia;
+    }
+    a {
+        position: relative;
+        color: $beigeTrasparencia;
+        text-decoration: none;
+        top: 10px;
+        font-size: 20px;
+    }
+}
+
+.imgGaleria {
+    height: 80%;
+    a {
+        font-size: 50px;
+        color: $beige;
+        text-decoration: none;
+        margin: 0px 5px;
+    }
+
+    img {
+        max-width: 100%;
+        border: 7px solid $beige;
+    }
+}

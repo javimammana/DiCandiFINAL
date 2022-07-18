@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Tangerine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+  box-sizing: border-box;
+}
+
+.background, .backgrounCircuito, .backgrounDegustacion, .backgrounVisita, .backgrounTorrontes, .backgrounMerlot, .backgrounCabernet, .backgrounMalbec {
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: rgba(243, 242, 238, 0.6666666667);
+  background-image: url("../img/backgroud/backgroud.jpg");
+}
+
+.navBox {
+  background-color: #86212A;
+  height: 55px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.navBar {
+  width: 100%;
+  height: 35px;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  box-shadow: 0px 0px 10px 4px rgba(243, 242, 238, 0.2);
+}
+.navBar input {
+  display: none;
+}
+.navBar input:checked + ul {
+  display: flex;
+}
+.navBar ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  background-color: #262626;
+  position: relative;
+  width: 100%;
+  top: -2px;
+  padding-right: 5%;
+}
+.navBar ul li {
+  margin: 5px 10px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: #F3F2EE;
+  opacity: 70%;
+}
+.navBar ul li a:hover {
+  opacity: 100%;
+}
+.navBar label {
+  color: #F3F2EE;
+  font-size: 24px;
+  margin-right: 5%;
+}
+.navBar label img {
+  position: relative;
+  top: -3px;
+}
+
+.navActive {
+  opacity: 100% !important;
+}
+
+.navLogo {
+  justify-content: start;
+  position: absolute;
+  top: 0;
+  margin-left: 5%;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.navLogo img {
+  height: 70px;
+}
+
+.footerBarClass {
+  background-color: #262626;
+}
+.footerBarClass a h5 {
+  color: #F3F2EE;
+  font-size: 12px;
+  opacity: 50%;
+  transition: all 0.5s;
+}
+.footerBarClass a h5:hover {
+  opacity: 100%;
+  transform: scale(1.03);
+}
+
+.footerImg {
+  opacity: 70%;
+  transition: all 0.5s;
+}
+
+.footerImg:hover {
+  opacity: 100%;
+  transform: scale(1.05);
+}
+
+.copyright {
+  background-color: #86212A;
+  color: rgba(243, 242, 238, 0.6666666667);
+}
+.copyright h6 {
+  font-size: 10px;
+}
+
+.mainClass {
+  height: calc(100vh - 90px);
+  background-color: #F3F2EE;
+}
+
+.encabezado {
+  font-family: "Tangerine", cursive;
+  opacity: 50%;
+  font-size: 60px;
+  position: relative;
+  top: -10px;
+}
+
+.divh1 {
+  position: relative;
+  top: -30px;
+}
+
+.backgrounMalbec {
+  background-image: url("../img/backgroud/backgroundMalbec.jpg");
+}
+
+.backgrounCabernet {
+  background-image: url("../img/backgroud/backgroundCabernet.jpg");
+}
+
+.backgrounMerlot {
+  background-image: url("../img/backgroud/backgroundMerlot.jpg");
+}
+
+.backgrounTorrontes {
+  background-image: url("../img/backgroud/backgroundTorrontes.jpg");
+}
+
+.backgrounVisita {
+  background-image: url("../img/backgroud/backgroundVisita.jpg");
+}
+
+.backgrounDegustacion {
+  background-image: url("../img/backgroud/backgroundDegustacion.jpg");
+}
+
+.backgrounCircuito {
+  background-image: url("../img/backgroud/backgroundCircuito.jpg");
+}
+
+.formInput, .formTextarea {
+  background-color: #262626;
+  color: #F3F2EE;
+  border: 1px solid #86212A;
+}
+
+.formTextarea {
+  height: 150px;
+}
+
+.formBtn {
+  background-color: #F3F2EE;
+  color: #86212A;
+  border: 2px solid #F3F2EE;
+}
+
+.mImg {
+  transition: all 0.5s;
+}
+
+.mImg:hover {
+  transform: scale(1.1);
+}
+
+.ampliacion {
+  display: none;
+}
+
+.ampliacion:target {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.tituloGaleria h3 {
+  color: rgba(243, 242, 238, 0.6666666667);
+}
+.tituloGaleria a {
+  position: relative;
+  color: rgba(243, 242, 238, 0.6666666667);
+  text-decoration: none;
+  top: 10px;
+  font-size: 20px;
+}
+
+.imgGaleria {
+  height: 80%;
+}
+.imgGaleria a {
+  font-size: 50px;
+  color: #F3F2EE;
+  text-decoration: none;
+  margin: 0px 5px;
+}
+.imgGaleria img {
+  max-width: 100%;
+  border: 7px solid #F3F2EE;
+}
+
+.cardClass {
+  background-color: rgba(243, 242, 238, 0.4470588235);
+  transition: all 0.5s;
+}
+
+.cardClass:hover {
+  transform: scale(1.05);
+  background-color: #F3F2EE;
+  color: #262626;
+}
+
+.precio {
+  color: #86212A;
+}
+
+.btnClass {
+  background-color: #86212A;
+  color: #F3F2EE;
+  border: 2px solid #262626;
+}
+
+@media (min-width: 768px) {
+  .navBar label {
+    display: none;
+  }
+  .navBar ul {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .encabezado {
+    font-size: 100px;
+  }
+}
